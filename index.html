@@ -1,19 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        h1 { color: #005bfb; }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alejandro de la Torre - Personal Webpage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>¡Hola! Soy [Tu Nombre]</h1>
-    <p>Bienvenido a mi página personal.</p>
-    <p>Puedes contactarme en: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
-    <p>Visita mi <a href="https://github.com/tuusuario" target="_blank">GitHub</a></p>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Personal Webpage</h1>
+            <p>Alejandro de la Torre - Cybersecurity Enthusiast & Student</p>
+        </div>
+    </header>
+
+    <section class="bio">
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Alejandro de la Torre. I'm passionate about cybersecurity, specifically offensive security and system architecture.
+            Currently, I'm studying a Master's in Cybersecurity and hold the ISO 27001 Lead Auditor certification. I also have experience 
+            with pentesting and automation in Python and Bash. I'm transitioning my career towards a focus on system security and 
+            offensive security. You can find my CV and projects on my GitHub below.
+        </p>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://github.com/xartrex/cybersecurity-portfolio" target="_blank">Cybersecurity Portfolio</a> - A collection of projects, labs, and reports from my cybersecurity courses and personal learning journey, including tools, scripts, and techniques for penetration testing.</li>
+            <li><a href="https://github.com/xartrex/automation-scripts" target="_blank">Pentesting Automation Scripts</a> - A set of scripts to automate common pentesting tasks using Nmap, Masscan, and Python, focusing on efficient vulnerability scanning and enumeration.</li>
+            <li><a href="https://github.com/xartrex/docker-kubernetes-security" target="_blank">Docker & Kubernetes Security</a> - Learning and testing security measures related to containerization and orchestration with Docker and Kubernetes.</li>
+            <li><a href="https://github.com/xartrex/windows-server-kerberos" target="_blank">Windows Server & Kerberos Setup</a> - A series of guides and configurations to set up and secure Windows Server environments, including Kerberos authentication and Active Directory.</li>
+            <li><a href="https://github.com/xartrex/metasploit-exploitation" target="_blank">Metasploit Exploitation</a> - Hands-on practice exploiting vulnerabilities using Metasploit, including working with MSFvenom for payload generation and exploitation of systems.</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at: <a href="mailto:alextargota@gmail.com">alextargota@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alejandro de la Torre. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
