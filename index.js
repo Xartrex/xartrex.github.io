@@ -26,6 +26,14 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
+        // Years of experience, counted from the year in data-years-since.
+        // The number in the HTML is the fallback for visitors without JS.
+        document.querySelectorAll('[data-years-since]').forEach(function (el) {
+            var since = parseInt(el.getAttribute('data-years-since'), 10);
+            var years = new Date().getFullYear() - since;
+            if (since && years > 0) el.textContent = years;
+        });
+
         var room = document.querySelector('.room');
         var bar = document.getElementById('bar');
 
