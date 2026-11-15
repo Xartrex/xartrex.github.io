@@ -10,18 +10,19 @@ Plain static site served by GitHub Pages from `main`. No build step.
 
 | File | Purpose |
 |---|---|
-| `index.html` | Single page: landing, about / work / projects / contact panels |
+| `index.html` | Single scrolling page: the room (hero), about, work, projects, contact |
 | `index.css` | Styles (colours as CSS variables in `:root`) |
-| `index.js` | Panel navigation and intro animation (vanilla JS, no jQuery) |
-| `particles.js`, `app.js` | Background particles ([particles.js](https://vincentgarreau.com/particles.js/), MIT) |
+| `index.js` | Lights-on intro, pointer torch, sticky section bar, in-place contact form (vanilla JS, loaded in `<head>`) |
 | `404.html`, `404.css`, `404.js` | Custom "lost in space" 404 page ([tsParticles](https://github.com/tsparticles/404-templates)) |
-| `assets/` | CV (PDF), background, favicon, 404 artwork |
+| `assets/` | CV (PDF), `hacker-room.avif` hero photo, favicon, 404 artwork |
 
-External: [animate.css](https://animate.style/), [Font Awesome](https://fontawesome.com/), Google Fonts (Josefin Sans), [Formcarry](https://formcarry.com) for the contact form. All CDN stylesheets and scripts are pinned with Subresource Integrity hashes.
+External: Google Fonts (Big Shoulders, IBM Plex Sans) and [Formcarry](https://formcarry.com) for the contact form. No JS libraries; icons are inline SVG.
+
+Palette (CSS variables in `index.css`) is taken from the hero photo: night `#07141d`, wall `#0e2431`, lamp `#62d3e6`, ember `#e8894a`, screen `#d8ebf0`, haze `#86a2ad`.
 
 ## Security
 
-The pages ship a Content-Security-Policy (`<meta http-equiv>`): scripts only from this origin (plus jsDelivr on the 404 page), no inline scripts or inline styles, form posts only to Formcarry. If you add inline `style="…"` or `onclick="…"`, the browser will block it; use a CSS class or `index.js` instead.
+The pages ship a Content-Security-Policy (`<meta http-equiv>`): scripts only from this origin (plus jsDelivr on the 404 page), no inline scripts or inline styles, form posts and fetches only to Formcarry. If you add inline `style="…"` or `onclick="…"`, the browser will block it; use a CSS class or `index.js` instead.
 
 ## Run locally
 
@@ -31,9 +32,9 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Updating content
 
-- Text lives directly in `index.html`, one `<section class="container">` per panel.
+- Text lives directly in `index.html`, one `<section class="block">` per section.
 - Replace `assets/CV-Alejandro_de_la_Torre_Argota.pdf` to update the resume (keep the name or update the link in the *work* panel).
 
 ## Credits
 
-Design based on [fimbo](https://github.com/imfunniee/fimbo) by imfunniee (MIT), via [TheKaushikGoswami's portfolio template](https://github.com/TheKaushikGoswami/thekaushikgoswami.github.io).
+The 404 page comes from [tsParticles' 404 templates](https://github.com/tsparticles/404-templates). An earlier version of the site was based on [fimbo](https://github.com/imfunniee/fimbo) by imfunniee (MIT).

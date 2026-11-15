@@ -16,7 +16,7 @@
 }
 
 .permission_denied {
-    background: #24344c !important;
+    background: #07141d !important;
 }
 
 .permission_denied a {
@@ -35,7 +35,7 @@
 
 .permission_denied h1 {
     text-align: center;
-    color: #fff;
+    color: #d8ebf0;
     font-family: "Dosis", sans-serif;
     font-size: 100px;
     margin-bottom: 0px;
@@ -44,7 +44,7 @@
 
 .permission_denied h3 {
     text-align: center;
-    color: #fff;
+    color: #d8ebf0;
     font-size: 19px;
     line-height: 23px;
     max-width: 330px;
@@ -61,7 +61,7 @@
 
 .permission_denied h3 span:after {
     content: "";
-    border-bottom: 3px solid #ffbb39;
+    border-bottom: 3px solid #e8894a;
     position: absolute;
     left: 0;
     top: 43%;
@@ -70,9 +70,9 @@
 
 .denied__link {
     background: none;
-    color: #fff;
+    color: #d8ebf0;
     padding: 12px 0px 10px 0px;
-    border: 1px solid #fff;
+    border: 1px solid #62d3e6;
     outline: none;
     border-radius: 7px;
     width: 150px;
@@ -88,8 +88,8 @@
 }
 
 .denied__link:hover {
-    color: #ffbb39;
-    border-color: #ffbb39;
+    color: #e8894a;
+    border-color: #e8894a;
     cursor: pointer;
     opacity: 1;
 }
