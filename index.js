@@ -1,68 +1,76 @@
-function showprojects(){
-    $("#projects_container").css("display","inherit");
-    $("#projects_container").addClass("animated slideInDown");
-    setTimeout(function(){
-        $("#projects_container").removeClass("animated slideInDown");
-    },800);
-}
-function closeprojects(){
-    $("#projects_container").addClass("animated slideOutUp");
-    setTimeout(function(){
-        $("#projects_container").removeClass("animated slideOutUp");
-        $("#projects_container").css("display","none");
-    },800);
-}
-function showabout(){
-    $("#about_container").css("display","inherit");
-    $("#about_container").addClass("animated slideInLeft");
-    setTimeout(function(){
-        $("#about_container").removeClass("animated slideInLeft");
-    },800);
-}
-function closeabout(){
-    $("#about_container").addClass("animated slideOutLeft");
-    setTimeout(function(){
-        $("#about_container").removeClass("animated slideOutLeft");
-        $("#about_container").css("display","none");
-    },800);
-}
-function showwork(){
-    $("#work_container").css("display","inherit");
-    $("#work_container").addClass("animated slideInRight");
-    setTimeout(function(){
-        $("#work_container").removeClass("animated slideInRight");
-    },800);
-}
-function closework(){
-    $("#work_container").addClass("animated slideOutRight");
-    setTimeout(function(){
-        $("#work_container").removeClass("animated slideOutRight");
-        $("#work_container").css("display","none");
-    },800);
-}
-function showcontact(){
-    $("#contact_container").css("display","inherit");
-    $("#contact_container").addClass("animated slideInUp");
-    setTimeout(function(){
-        $("#contact_container").removeClass("animated slideInUp");
-    },800);
-}
-function closecontact(){
-    $("#contact_container").addClass("animated slideOutDown");
-    setTimeout(function(){
-        $("#contact_container").removeClass("animated slideOutDown");
-        $("#contact_container").css("display","none");
-    },800);
-}
-setTimeout(function(){
-    $("#loading").addClass("animated fadeOut");
-    setTimeout(function(){
-      $("#loading").removeClass("animated fadeOut");
-      $("#loading").css("display","none");
-      $("#box").css("display","none");
-      $("#projects").removeClass("animated fadeIn");
-      $("#about").removeClass("animated fadeIn");
-      $("#contact").removeClass("animated fadeIn");
-      $("#work").removeClass("animated fadeIn");
-    },1000);
-},1500);
+// Panel navigation (no dependencies). Animations come from animate.css.
+(function () {
+    'use strict';
+
+    var ANIM_MS = 800;
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var PANELS = {
+        about:    { show: 'slideInLeft',  hide: 'slideOutLeft' },
+        work:     { show: 'slideInRight', hide: 'slideOutRight' },
+        projects: { show: 'slideInDown',  hide: 'slideOutUp' },
+        contact:  { show: 'slideInUp',    hide: 'slideOutDown' }
+    };
+    var openPanel = null;
+    var opener = null;
+
+    function panel(name) { return document.getElementById(name + '_container'); }
+
+    function animate(el, cls, done) {
+        if (reduceMotion) { if (done) done(); return; }
+        el.classList.add('animated', cls);
+        setTimeout(function () {
+            el.classList.remove('animated', cls);
+            if (done) done();
+        }, ANIM_MS);
+    }
+
+    function show(name, trigger) {
+        var el = panel(name);
+        if (!el || !PANELS[name]) return;
+        if (openPanel && openPanel !== name) panel(openPanel).hidden = true;
+        opener = trigger || null;
+        openPanel = name;
+        el.hidden = false;
+        el.scrollTop = 0;
+        el.querySelector('.close').focus({ preventScroll: true });
+        animate(el, PANELS[name].show);
+    }
+
+    function hide(name) {
+        var el = panel(name);
+        if (!el || el.hidden) return;
+        openPanel = null;
+        animate(el, PANELS[name].hide, function () { el.hidden = true; });
+        if (opener && document.body.contains(opener) && opener.offsetParent !== null) opener.focus();
+        opener = null;
+    }
+
+    document.addEventListener('click', function (e) {
+        var o = e.target.closest('[data-open]');
+        if (o) { show(o.getAttribute('data-open'), o); return; }
+        var c = e.target.closest('[data-close]');
+        if (c) hide(c.getAttribute('data-close'));
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && openPanel) hide(openPanel);
+    });
+
+    // Intro: loader, then the sliding boxes, then the name.
+    var loading = document.getElementById('loading');
+    var box = document.getElementById('box');
+    if (reduceMotion) {
+        loading.style.display = 'none';
+        box.style.display = 'none';
+        document.body.classList.add('no-intro');
+        return;
+    }
+    setTimeout(function () {
+        loading.classList.add('animated', 'fadeOut');
+        setTimeout(function () { loading.style.display = 'none'; }, 500);
+    }, 600);
+    setTimeout(function () {
+        box.style.display = 'none';
+        document.querySelectorAll('.edge').forEach(function (b) { b.classList.remove('animated', 'fadeIn'); });
+    }, 2100);
+})();

@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="./404.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'">
+    <meta name="robots" content="noindex">
+    <title>404 · Lost in space | Alejandro de la Torre</title>
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/404.css">
 </head>
 
 <body class="permission_denied">
-    <div id="tsparticles"></div>
-    <div class="denied__wrapper">
+    <div id="tsparticles" aria-hidden="true"></div>
+    <main class="denied__wrapper">
         <h1>404</h1>
-        <h3>LOST IN <span>SPACE</span> App-Name? Hmm, looks like that page doesn't exist.</h3>
-        <img id="astronaut" src="./assets/astronaut.svg" />
-        <img id="planet" src="./assets/planet.svg" />
-        <a href="https://thekaushikgoswami.github.io"><button class="denied__link">Go Home</button></a>
-    </div>
+        <h3>LOST IN <span>SPACE</span>? Hmm, looks like that page doesn't exist.</h3>
+        <img id="astronaut" src="/assets/astronaut.svg" alt="">
+        <img id="planet" src="/assets/planet.svg" alt="">
+        <a class="denied__link" href="/">Go home</a>
+    </main>
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.11/dist/tsparticles.min.js"></script>
-    <script type="text/javascript" src="./404.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.11/dist/tsparticles.min.js"
+        integrity="sha384-8+dBcbRm13YOqH+FxcsXVdE2orUnZK70dv2EwShTmzt5eas/Q01Q4CH4bRNXDOaS"
+        crossorigin="anonymous"></script>
+    <script src="/404.js"></script>
+</body>
 
 </html>

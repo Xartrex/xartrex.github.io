@@ -1,85 +1,39 @@
-# Personal Portfolio ⚡
+# xartrex.github.io
 
-> A clean, beautiful, ambient portfolio template for Software Developers!
+Personal portfolio of **Alejandro de la Torre**, Cybersecurity & SecDevOps Engineer (Madrid, Spain).
 
-> https://thekaushikgoswami.github.io
+🌐 **Live:** https://xartrex.github.io
 
-![GitHub stars](https://img.shields.io/github/stars/TheKaushikGoswami/thekaushikgoswami.github.io?style=for-the-badge) 
-![GitHub forks](https://img.shields.io/github/forks/TheKaushikGoswami/thekaushikgoswami.github.io?style=for-the-badge)
-[![Maintenance](https://img.shields.io/maintenance/yes/2024?style=for-the-badge)](https://github.com/TheKaushikGoswami/thekaushikgoswami.github.io/commits/master)
-[![Website](https://img.shields.io/website?down_color=red&down_message=Offline&style=for-the-badge&up_color=light_green&up_message=Online&url=https%3A%2F%2Fthekaushikgoswami.github.io)](http://thekaushikgoswami.github.io)
+## Stack
 
-## Website Preview
-<a href="https://thekaushikgoswami.github.io" target="_blank">
-    <img src="./assets/Website_Demo.png" align="center" alt="website preview">
-</a><br><br>
+Plain static site served by GitHub Pages from `main`. No build step.
 
-> Make Sure to ⭐ the Repo if You liked it -- It Helps!
+| File | Purpose |
+|---|---|
+| `index.html` | Single page: landing, about / work / projects / contact panels |
+| `index.css` | Styles (colours as CSS variables in `:root`) |
+| `index.js` | Panel navigation and intro animation (vanilla JS, no jQuery) |
+| `particles.js`, `app.js` | Background particles ([particles.js](https://vincentgarreau.com/particles.js/), MIT) |
+| `404.html`, `404.css`, `404.js` | Custom "lost in space" 404 page ([tsParticles](https://github.com/tsparticles/404-templates)) |
+| `assets/` | CV (PDF), background, favicon, 404 artwork |
 
-## 📋 Features
+External: [animate.css](https://animate.style/), [Font Awesome](https://fontawesome.com/), Google Fonts (Josefin Sans), [Formcarry](https://formcarry.com) for the contact form. All CDN stylesheets and scripts are pinned with Subresource Integrity hashes.
 
-⚡️ Open-Source\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Easy to modify
+## Security
 
-## 📦 Installation & Deployment
+The pages ship a Content-Security-Policy (`<meta http-equiv>`): scripts only from this origin (plus jsDelivr on the 404 page), no inline scripts or inline styles, form posts only to Formcarry. If you add inline `style="…"` or `onclick="…"`, the browser will block it; use a CSS class or `index.js` instead.
 
-- Clone the repository and modify the content of **index.html** according to your requirements.
-- Add or remove images from the `thekaushikgoswami.github.io/assets/` directory as per your needs.
-- I highly recommend using [GitHub Pages](https://docs.github.com/en/pages) to deploy the website in the easiest way.
-- To deploy your website using GitHub Pages, create a GitHub repository with the name `<your-github-username>.github.io`. Please use this exact name.
-- Push the generated code to the `master` branch of this repository.
-
-## 📚 Sections
-
-- [x] About
-- [x] Skills
-- [x] Work
-- [x] Resume
-- [x] Contact
-- [x] Social Media Links
-- [x] Custom 404 Page
-- [x] Particle Effect
-- [x] Footer
-
-To view a live example, **[click here](https://thekaushikgoswami.github.io/)**
-
-## 🛠️ Tools Used
-
-* [<b>jQuery</b>](https://jquery.com/)
-* [<b>Animate.css</b>](https://animate.style/)
-* [<b>Google Fonts</b>](https://fonts.google.com/)
-* [<b>particles.js</b>](https://vincentgarreau.com/particles.js/)
-
-## 🚀 Contributing 
-
-### Step 1: Clone The Repo 💡
-
-Fork the repository and then clone it locally by doing -
+## Run locally
 
 ```bash
-git clone https://github.com/TheKaushikGoswami/thekaushikgoswami.github.io.git
+python3 -m http.server 8000   # then open http://localhost:8000
 ```
 
-### Step 2: Build Your Code 🔨
+## Updating content
 
-Start your magic by modifying the code and making changes of your own. Then push the commit using -
+- Text lives directly in `index.html`, one `<section class="container">` per panel.
+- Replace `assets/CV-Alejandro_de_la_Torre_Argota.pdf` to update the resume (keep the name or update the link in the *work* panel).
 
-```bash
-git add .
-git commit -m "<your commit message here>"
-git push YOUR_REPO_URL develop
-```
+## Credits
 
-### Step 3: Create a new pull request 🔃
-
-After cloning & setting up the local project you can push the changes to your github fork and make a pull request (optional).
-
-## 🤗 Special Thanks To
-
-- [imfunniee](https://github.com/imfunniee/fimbo) - For The Base Template of this Portfolio
-- [tsParticles](https://github.com/tsparticles/404-templates) - For The Custom 404 Page
-
-------
-
-Made with :heart: in India
+Design based on [fimbo](https://github.com/imfunniee/fimbo) by imfunniee (MIT), via [TheKaushikGoswami's portfolio template](https://github.com/TheKaushikGoswami/thekaushikgoswami.github.io).
