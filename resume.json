@@ -34,7 +34,8 @@
         "Integrating SAST and DAST into CI/CD pipelines",
         "Developing and automating security assessment tools (Python, Bash)",
         "Designing and deploying IAM solutions with self-sovereign identity (SSI) for decentralised authentication",
-        "Auditing Ethereum smart contracts and blockchain security"
+        "Auditing Ethereum smart contracts and blockchain security",
+        "Vulnerability detection, monitoring and management for eu-LISA, including automating the vulnerability management process"
       ]
     }
   ],
@@ -128,7 +129,7 @@
     },
     {
       "name": "eu-LISA (EU Agency for the Operational Management of Large-Scale IT Systems)",
-      "description": "Vulnerability management for an EU agency",
+      "description": "Vulnerability management for an EU agency, assigned at NTT DATA",
       "highlights": [
         "Detection, monitoring and management of vulnerabilities",
         "Automation of the vulnerability management process"
@@ -299,6 +300,7 @@
       "Bash",
       "Horizon 2020",
       "NTT DATA",
+      "eu-LISA",
       "Madrid",
       "Spain",
       "English C1"
@@ -309,6 +311,7 @@
       "SAST/DAST integrated into CI/CD pipelines; static and dynamic code audits",
       "IAM and self-sovereign identity deployed on European Horizon 2020 projects (SECANT, DataPorts, EBSI)",
       "Ethereum smart contract security audits and their automation",
+      "Vulnerability management and its automation for eu-LISA (EU agency), at NTT DATA",
       "Master's in Cybersecurity (UC3M); thesis on Metasploit modules for Kubernetes security",
       "ISO/IEC 27001 Lead Auditor certified",
       "Python, Go and Bash automation; Docker and Kubernetes",

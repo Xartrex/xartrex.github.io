@@ -20,6 +20,7 @@ Profiles: [LinkedIn](https://www.linkedin.com/in/alejandro-de-la-torre-argota-73
 - SAST/DAST integrated into CI/CD pipelines; static and dynamic code audits
 - IAM and self-sovereign identity deployed on European Horizon 2020 projects (SECANT, DataPorts, EBSI)
 - Ethereum smart contract security audits and their automation
+- Vulnerability management and its automation for eu-LISA (EU agency), at NTT DATA
 - Master's in Cybersecurity (UC3M); thesis on Metasploit modules for Kubernetes security
 - ISO/IEC 27001 Lead Auditor certified
 - Python, Go and Bash automation; Docker and Kubernetes
@@ -36,6 +37,7 @@ Profiles: [LinkedIn](https://www.linkedin.com/in/alejandro-de-la-torre-argota-73
 - Developing and automating security assessment tools (Python, Bash)
 - Designing and deploying IAM solutions with self-sovereign identity (SSI) for decentralised authentication
 - Auditing Ethereum smart contracts and blockchain security
+- Vulnerability detection, monitoring and management for eu-LISA, including automating the vulnerability management process
 
 ## Projects
 
@@ -57,7 +59,7 @@ Horizon 2020 Research & Innovation project. <https://ec.europa.eu/digital-buildi
 - Automated security audits of Ethereum smart contracts, improving vulnerability detection
 
 ### eu-LISA (EU Agency for the Operational Management of Large-Scale IT Systems)
-Vulnerability management for an EU agency
+Vulnerability management for an EU agency, assigned at NTT DATA
 
 - Detection, monitoring and management of vulnerabilities
 - Automation of the vulnerability management process
@@ -114,4 +116,4 @@ Python REST API (Flask, SQLAlchemy) containerised with Docker. <https://github.c
 
 ## Keywords
 
-Cybersecurity Engineer, Security Analyst, SecDevOps, DevSecOps, Penetration Tester, Application Security, Penetration testing, Web API security, SAST, DAST, CI/CD, Secure code review, Vulnerability management, Security automation, IAM, Self-sovereign identity, Blockchain security, Smart contract auditing, Ethereum, Kubernetes security, Docker, Metasploit, Burp Suite, OWASP ZAP, Nmap, ISO 27001 Lead Auditor, Python, Go, Bash, Horizon 2020, NTT DATA, Madrid, Spain, English C1
+Cybersecurity Engineer, Security Analyst, SecDevOps, DevSecOps, Penetration Tester, Application Security, Penetration testing, Web API security, SAST, DAST, CI/CD, Secure code review, Vulnerability management, Security automation, IAM, Self-sovereign identity, Blockchain security, Smart contract auditing, Ethereum, Kubernetes security, Docker, Metasploit, Burp Suite, OWASP ZAP, Nmap, ISO 27001 Lead Auditor, Python, Go, Bash, Horizon 2020, NTT DATA, eu-LISA, Madrid, Spain, English C1
