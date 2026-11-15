@@ -168,15 +168,27 @@
         "Penetration testing",
         "Web API security",
         "Network pentesting",
+        "Forced browsing / content discovery",
         "Cloud pentesting",
-        "Burp Suite",
-        "Metasploit",
-        "Nmap",
-        "Wireshark",
-        "OWASP ZAP",
         "Exploitation",
         "Reverse engineering",
         "Malware analysis"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "Nmap",
+        "Burp Suite",
+        "OWASP ZAP",
+        "Feroxbuster",
+        "Postman",
+        "Swagger Editor",
+        "Wireshark",
+        "Metasploit",
+        "Metasploit module development (Ruby)",
+        "Slither",
+        "Mythril"
       ]
     },
     {
@@ -199,10 +211,12 @@
       "keywords": [
         "Docker",
         "Kubernetes",
+        "k3s",
         "Kubernetes security",
         "IAM",
         "Secure architecture",
-        "Linux"
+        "Linux",
+        "Kali Linux"
       ]
     },
     {
@@ -289,11 +303,20 @@
       "Smart contract auditing",
       "Ethereum",
       "Kubernetes security",
-      "Docker",
-      "Metasploit",
+      "Nmap",
       "Burp Suite",
       "OWASP ZAP",
-      "Nmap",
+      "Feroxbuster",
+      "Metasploit",
+      "Wireshark",
+      "Postman",
+      "Swagger",
+      "Slither",
+      "Mythril",
+      "Kali Linux",
+      "Docker",
+      "Kubernetes",
+      "k3s",
       "ISO 27001 Lead Auditor",
       "Python",
       "Go",

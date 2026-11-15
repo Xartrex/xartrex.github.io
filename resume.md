@@ -97,9 +97,10 @@ Python REST API (Flask, SQLAlchemy) containerised with Docker. <https://github.c
 
 ## Skills
 
-- **Offensive security:** Penetration testing, Web API security, Network pentesting, Cloud pentesting, Burp Suite, Metasploit, Nmap, Wireshark, OWASP ZAP, Exploitation, Reverse engineering, Malware analysis
+- **Offensive security:** Penetration testing, Web API security, Network pentesting, Forced browsing / content discovery, Cloud pentesting, Exploitation, Reverse engineering, Malware analysis
+- **Tools:** Nmap, Burp Suite, OWASP ZAP, Feroxbuster, Postman, Swagger Editor, Wireshark, Metasploit, Metasploit module development (Ruby), Slither, Mythril
 - **Application security & DevSecOps:** SAST, DAST, Static code analysis, Dynamic code analysis, Secure code review, CI/CD security, SecDevOps, DevSecOps, Vulnerability management, Security automation
-- **Platforms & architecture:** Docker, Kubernetes, Kubernetes security, IAM, Secure architecture, Linux
+- **Platforms & architecture:** Docker, Kubernetes, k3s, Kubernetes security, IAM, Secure architecture, Linux, Kali Linux
 - **Blockchain & identity:** Ethereum, Smart contract auditing, Solidity, Blockchain security, Digital identity, Self-sovereign identity (SSI), Decentralised identity
 - **Governance:** ISO/IEC 27001, ISO 27001 Lead Auditor, Security management, Data protection
 - **Programming languages:** Python, Go, Bash, Java, C, C++, JavaScript, SQL
@@ -116,4 +117,4 @@ Python REST API (Flask, SQLAlchemy) containerised with Docker. <https://github.c
 
 ## Keywords
 
-Cybersecurity Engineer, Security Analyst, SecDevOps, DevSecOps, Penetration Tester, Application Security, Penetration testing, Web API security, SAST, DAST, CI/CD, Secure code review, Vulnerability management, Security automation, IAM, Self-sovereign identity, Blockchain security, Smart contract auditing, Ethereum, Kubernetes security, Docker, Metasploit, Burp Suite, OWASP ZAP, Nmap, ISO 27001 Lead Auditor, Python, Go, Bash, Horizon 2020, NTT DATA, eu-LISA, Madrid, Spain, English C1
+Cybersecurity Engineer, Security Analyst, SecDevOps, DevSecOps, Penetration Tester, Application Security, Penetration testing, Web API security, SAST, DAST, CI/CD, Secure code review, Vulnerability management, Security automation, IAM, Self-sovereign identity, Blockchain security, Smart contract auditing, Ethereum, Kubernetes security, Nmap, Burp Suite, OWASP ZAP, Feroxbuster, Metasploit, Wireshark, Postman, Swagger, Slither, Mythril, Kali Linux, Docker, Kubernetes, k3s, ISO 27001 Lead Auditor, Python, Go, Bash, Horizon 2020, NTT DATA, eu-LISA, Madrid, Spain, English C1
