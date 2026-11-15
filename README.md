@@ -20,6 +20,15 @@ External: Google Fonts (Big Shoulders, IBM Plex Sans) and [Formcarry](https://fo
 
 Palette (CSS variables in `index.css`) is taken from the hero photo: night `#07141d`, wall `#0e2431`, lamp `#62d3e6`, ember `#e8894a`, screen `#d8ebf0`, haze `#86a2ad`.
 
+## Machine-readable résumé
+
+For recruiting tools and AI assistants:
+
+- `resume.json`: [JSON Resume](https://jsonresume.org/schema) format plus `meta.keypoints` and `meta.keywords`. **This is the source; edit it.**
+- `resume.md`: generated from it. Run `python3 scripts/build_resume.py` after editing the JSON and commit both.
+- `llms.txt`: tells AI agents where the résumé lives.
+- `.nojekyll`: stops GitHub Pages turning `resume.md` into HTML, so it is served raw.
+
 ## Security
 
 The pages ship a Content-Security-Policy (`<meta http-equiv>`): scripts only from this origin (plus jsDelivr on the 404 page), no inline scripts or inline styles, form posts and fetches only to Formcarry. If you add inline `style="…"` or `onclick="…"`, the browser will block it; use a CSS class or `index.js` instead.

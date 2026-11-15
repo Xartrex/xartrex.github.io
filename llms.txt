@@ -1,0 +1,17 @@
+# Alejandro de la Torre
+
+> Cybersecurity & SecDevOps Engineer in Madrid, Spain. Penetration testing, SAST/DAST in CI/CD, IAM and self-sovereign identity, blockchain and smart contract security, Kubernetes security. Master's in Cybersecurity (UC3M), ISO 27001 Lead Auditor.
+
+Machine-readable résumé for recruiting tools and AI assistants. Both files hold the same content; resume.json is the source.
+
+## Résumé
+
+- [resume.json](https://xartrex.github.io/resume.json): JSON Resume schema (https://jsonresume.org/schema), plus `meta.keypoints` and `meta.keywords`
+- [resume.md](https://xartrex.github.io/resume.md): the same résumé as Markdown, with key points and keywords
+- [CV (PDF)](https://xartrex.github.io/assets/CV-Alejandro_de_la_Torre_Argota.pdf): human-formatted CV
+
+## Contact
+
+- [Contact form](https://xartrex.github.io/#contact)
+- [LinkedIn](https://www.linkedin.com/in/alejandro-de-la-torre-argota-735437186/)
+- [GitHub](https://github.com/Xartrex)

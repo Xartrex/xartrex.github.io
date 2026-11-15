@@ -359,3 +359,6 @@ p.lede {
     .bar { transition: none; }
 }
 .nowrap { white-space: nowrap; }
+.work-body p.machine { margin-top: 1.2rem; font-size: .95rem; }
+.machine a { text-underline-offset: .25em; }
+.machine a:hover { color: var(--ember); }
