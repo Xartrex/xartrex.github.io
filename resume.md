@@ -42,13 +42,13 @@ Profiles: [LinkedIn](https://www.linkedin.com/in/alejandro-de-la-torre-argota-73
 ## Projects
 
 ### SECANT (2022 to 2023)
-Horizon 2020 Research & Innovation project. <https://secant-project.eu/>
+Horizon 2020 Research & Innovation project. <https://cordis.europa.eu/project/id/101019645/en>
 
 - Developed and deployed IAM and a digital wallet for decentralised identity management
 - Built a secure environment for healthcare centres across Europe
 
 ### DataPorts (2021 to 2022)
-Horizon 2020 Research & Innovation project. <https://dataports-project.eu/>
+Horizon 2020 Research & Innovation project. <https://digital-strategy.ec.europa.eu/en/news/project-dataports-data-platform-cognitive-ports-future>
 
 - Led web API penetration testing and code audits
 - Deployed IAM and blockchain nodes for secure data exchange
